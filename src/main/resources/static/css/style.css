@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/*determirna el color de la transicion de los botones*/
+:root{
+  --red:#f38a77;
+  --btn-color:#e58f00;
+    --about-sec:#e58f00;
+}
+
+/*determina letra del menú*/
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .1s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  
+}
+body{
+  background:#f7f7f7;
+}
+
+/*determinar el posicionamiento de la hamburguesa*/
+.home{
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 5rem;
+  color: #333;
+}
+.home .content p{
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+/* determinar los colores del color*/
+.btn{
+  display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--btn-color);
+  color:var(--btn-color);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: -3.9rem;
+}
+
+/*determina la transicion del boton al recorrer*/
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background:var(--red);
+  transition: .4s linear;
+  z-index: -1;
+}
+.btn:hover{
+  color: rgb(255, 255, 255);
+  border: .2rem solid var(--about-sec);
+}
+.btn:hover::before{
+  width:100%;
+  left: 0;
+}
+
+
+/* determinar los colores del color*/
+.btn1{
+    display: inline-block;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--btn-color);
+    color:var(--btn-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+  }
+  
+  /*determina la transicion del boton al recorrer*/
+  .btn1::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--red);
+    transition: .4s linear;
+    z-index: -1;
+  }
+  .btn1:hover{
+    color: rgb(255, 255, 255);
+    border: .2rem solid var(--about-sec);
+  }
+  .btn1:hover::before{
+    width:100%;
+    left: 0;
+  }
+
+
+/* determinar los colores del color*/
+  .btn2{
+    display: inline-block;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--btn-color);
+    color:var(--btn-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+  }
+  
+  /*determina la transicion del boton al recorrer*/
+  .btn2::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--red);
+    transition: .4s linear;
+    z-index: -1;
+  }
+  .btn2:hover{
+    color: rgb(255, 255, 255);
+    border: .2rem solid var(--about-sec);
+  }
+  .btn2:hover::before{
+    width:100%;
+    left: 0;
+  }
+
+
+
+/*determinar el movimiento y transicion de la burguer*/
+.home .image{
+  flex: 1 1 40rem;
+}
+.home .image img{
+  width: 100%;
+  padding: 1rem;
+  animation:float 3s linear infinite;
+}
+@keyframes float {
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+/* media si la ventana esta minimizada  */
+@media(max-width:991px){
+  html{
+    font-size: 55%;
+  }
+  header{
+    padding:2rem;
+  }
+  section{
+    padding:2rem;
+  }
+  .home .image img{
+    width: 100%;
+    padding-top: 8rem;
+  }
+}
+
+ /*medida si la ventana esta maximizada*/
+@media(max-width:768px){
+  #menu-bars{
+    display: initial;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0;
+    background: white;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 1%, 100% 0, 0 0);
+  }
+  .navbar.active{
+    top: 100%;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+  }
+  .navbar a{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    display: block;
+    border: .2rem solid var(--about-sec);
+    border-left: 0.5rem solid var(--btn-color);
+  }
+  .home .image{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home .image img{
+    width: 95%;
+    padding-top: 8rem;
+  }
+}
+
+.inputs     {
+    display: flex;
+    flex-direction: column;
+}   
+.box  {
+    width: 50%;
+
+    border-color:#d49633;
+    border-width: 0px,0px,0px,10px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}  
+
+.controls {
+    width: 50%;
+
+    border-color:#d49633;
+    border-width: 0px,0px,0px,10px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+} 
+
+/*ventana de aviso modal*/
+
+.contenido-modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+} 
+.modal {
+    width: 35%;
+    height: 55%;
+    background:#ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    border-radius: 10px;
+} 
+
+.cerrar-modal{
+    transform: translateY(-200%);
+} 
+
+.modal >img {
+width: 100%;
+height: 90%;
+
+} 
+.close{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+
+/*ventana de aviso modal*/
+
+
+.contenido2 {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+} 
+.modale {
+  width: 30%;
+  height: 50%;
+  background:#ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+} 
+
+.cerrar-m2{
+  transform: translateY(-200%);
+} 
+
+.modale >img {
+width: 100%;
+height:90%;
+} 
+.cerrar2{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: #000000;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+} 
+
+.texto-modal2{
+  padding: 4px  8px 60px 0px;
+  font-size: 20px;
+}
