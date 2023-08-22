@@ -131,7 +131,7 @@ document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarCl
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
     alert("Guardando en la canasta");
-	window.location.href = "Pago.html";
+	window.location.href = "Pago";
 
 }
 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/calendario.css">
+        <title>Preview de Imagen</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+              integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <input type="checkbox" id="checkbox">
+        <header class="header">
+            <h2 class="u-name">Burger <b>Eats</b>
+                <label for="checkbox">
+                    <i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+            </h2>
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </header>
+
+        <div class="body">
+            <nav class="side-bar">
+                <div class="user-p">
+                    <img src="images/ola.jpg">
+                    <h4>Elias</h4>
+                </div>
+                <ul>
+                    <li>
+                        <a href="reporte">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Plato">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <span>Agregar Platos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="AddUser">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Gestion de usuarios</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pedidos">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <span>Pedidos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="calendario">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>Calendario</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Foro">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <span>Foro</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index">
+                            <i class="fa fa-power-off" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="section-1">
+                <div class="container">
+                    <h1>CalenBurgerEats</h1>
+
+                    <div class="calendar">
+                        <div class="event-list">
+                            <h3>Actividades o Pedidos</h3>
+                            <ul id="event-list"></ul>
+                        </div>
+
+                        <div class="date-picker">
+                            <h4>Calendario</h4>
+                            <input type="date" id="event-date">
+                            <input type="text" id="event-name" placeholder="Nombre del Evento">
+                            <button id="add-event">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="js/calendario.js"></script>
+
+            </section>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Contacto</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/carrito.css">
+        <!--Icon-Font-->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header class="header">
+            <a href="Menu" id="logoHamburguesa"> <img src="images/Logo.png" alt=""></a>
+            <nav class="navbar">
+                <a href="Menu">Menu</a>
+                <a href="Nosotros">Nosotros</a>
+                <a href="Contactanos">Contactanos</a>
+                <a href="ZonasDeReparto">Zonas de Reparto</a>
+                <a href="index">Login</a>
+            </nav>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                <span class="precio-producto-carrito">s/80</span>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="icon-close"
+                                >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">s/200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </header>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <div class="container-form">
+            <div class="info-form">
+                <h2>Contáctanos</h2>
+                <p>Como empresa buscamos darte la mejor experiencia, por eso si tienes opniones en las que nos ayuden a mejorar, te invitamos a comentarlas.</p>
+                <b>¡En BurgerEats nos importas!</b>
+                <br>
+                <br>
+                <a href="#"><i class="fa fa-phone"></i> 994-708-291</a>
+                <a href="#"><i class="fa fa-envelope"></i> burgereats@hotmail.com</a>
+
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Nombre" class="campo">
+                <input type="text" name="apellido" placeholder="Apellido" class="campo">
+                <input type="text" name="Correo" placeholder="Correo Electronico" class="campo">
+                <input type="text" name="direccion" placeholder="Direccion" class="campo">
+                <input type="text" name="telefono" placeholder="Telefono" class="campo">
+                <input type="text" name="asunto" placeholder="Asunto" class="campo">
+                <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+                <br>
+                <br>
+                Requerido
+                <br>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Acepto haber leido los terminos y condiciones de BurgerEats.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Autorizo recibir promociones, ofertas y encuestas de BurgerEats a mi correo.
+                    </label>
+                </div>
+
+                <br>    
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+
+            </form>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <footer class="footer">
+
+            <div class="share">
+                <a href="#" class="btnAñadirCarrito">Facebook</a>
+                <a href="#" class="btnAñadirCarrito">Twitter</a>
+                <a href="#" class="btnAñadirCarrito">Instagram</a>
+            </div>
+        </footer>
+        <script src="js/carrito.js"></script>
+    </body>
+</html>
