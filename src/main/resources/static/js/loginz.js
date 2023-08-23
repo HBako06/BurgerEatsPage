@@ -1,17 +1,30 @@
 function ingresar() {
-    var usuario, password
+    var usuario = document.getElementById("inputUsuario").value;
+    var password = document.getElementById("inputPassword").value;
 
-    usuario = document.getElementById("inputUsuario").value;
-    password = document.getElementById("inputPassword").value;
-    //alert(usuario);
-    if (usuario == "admin" && password == 123) {
-        console.log(usuario);
-        //location.href = 'Dashboard/html/reporte.html';
-        //window.location.href('Dashboard/html/reporte.html');
-        window.location.href = "reporte";
-    } else {
-        window.location.href = "Menu";
-    }
+    var requestData = {
+        username: usuario,
+        password: password
+    };
+
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.loginSuccess) {
+            console.log('Inicio de sesión exitoso');
+            window.location.href = "reporte"; // Redirigir al área autorizada
+        } else {
+            alert('Inicio de sesión fallido. Por favor, verifica tus credenciales.');
+        }
+    })
+    .catch(error => {
+        console.error('Error al realizar el inicio de sesión:', error);
+        // Realiza acciones en caso de error
+    });
 }
-
-
