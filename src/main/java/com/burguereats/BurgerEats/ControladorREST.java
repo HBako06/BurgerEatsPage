@@ -66,10 +66,17 @@ public class ControladorREST {
     public String registro(){
         return "registro";
     }
+    
     @GetMapping("/reporte")
     public String reporte(){
         return "reporte";
     }
+    
+    @GetMapping("/Reporte-ingredientes")
+    public String reporteIngredientes(){
+        return "Reporte-ingredientes";
+    }
+
     /*
     @GetMapping("/")
     public String (){
