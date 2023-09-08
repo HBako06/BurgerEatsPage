@@ -20,7 +20,7 @@ public class ControladorREST {
     }
     @GetMapping("/AddUser")
     public String adduser(){
-        return "AddUser";
+        return "admin/AddUser";
     }
     @GetMapping("/Contactanos")
     public String contactanos (){
@@ -28,7 +28,7 @@ public class ControladorREST {
     }
     @GetMapping("/Foro")
     public String foro(){
-        return "Foro";
+        return "admin/Foro";
     }
     @GetMapping("/Nosotros")
     public String nosotros(){
@@ -40,7 +40,7 @@ public class ControladorREST {
     }
     @GetMapping("/Plato")
     public String plato(){
-        return "Plato";
+        return "admin/Plato";
     }
     @GetMapping("/ZonasDeReparto")
     public String zonasdereparto(){
@@ -48,11 +48,11 @@ public class ControladorREST {
     }
     @GetMapping("/calendario")
     public String calendario(){
-        return "calendario";
+        return "admin/calendario";
     }
     @GetMapping("/config")
     public String config(){
-        return "config";
+        return "admin/config";
     }
     @GetMapping("/inicio")
     public String inicio(){
@@ -60,7 +60,7 @@ public class ControladorREST {
     }
     @GetMapping("/pedidos")
     public String pedidos(){
-        return "pedidos";
+        return "admin/pedidos";
     }
     @GetMapping("/registro")
     public String registro(){
@@ -69,12 +69,12 @@ public class ControladorREST {
     
     @GetMapping("/reporte")
     public String reporte(){
-        return "reporte";
+        return "admin/reporte";
     }
     
-    @GetMapping("/Reporte-ingredientes")
-    public String reporteIngredientes(){
-        return "Reporte-ingredientes";
+    @GetMapping("/Gestion-ingredientes")
+    public String gestionIngredientes(){
+        return "admin/Gestion-ingredientes";
     }
 
     /*

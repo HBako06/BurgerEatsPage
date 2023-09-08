@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,84 +15,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
               integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
               crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
     </head>
+<body>
 
-    <body class="reporte">
+<div th:replace="layout.html"></div>
 
-        <input type="checkbox" id="checkbox">
-        <header class="header">
-            <h2 class="u-name">Burger <b>Eats</b>
-                <label for="checkbox">
-                    <i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
-                </label>
-            </h2>
-            <i class="fa fa-user" aria-hidden="true"></i>
-        </header>
-        <div class="body">
-            <nav class="side-bar">
-                <div class="user-p">
-                    <img src="images/ola.jpg">
-                    <h4>Juan</h4>
-                </div>
-                <ul>
-                    <li>
-                        <a href="reporte">
-                            <i class="fa fa-desktop" aria-hidden="true"></i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Plato">
-                            <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            <span>Agregar Platos</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="AddUser">
-                            <i class="fa-solid fa-user"></i>
-                            <span>Gestion de usuarios</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="pedidos">
-                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-                            <span>Pedidos</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="calendario">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <span>Calendario</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="Foro">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <span>Foro</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="config">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
-                            <span>Setting</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index">
-                            <i class="fa fa-power-off" aria-hidden="true"></i>
-                            <span>Logout</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <section class="section-1">
                 <div class="cuadros">
                     <h3 class="Titulo">Dashboard</h3>
@@ -280,13 +209,10 @@
                     </div>
                 </div>
 
-
-
             </section>
-
-
-
-
-    </body>
-
+        </div>
+    </div>
+</div>
+</div>
+</body>
 </html>
