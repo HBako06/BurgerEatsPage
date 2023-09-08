@@ -77,6 +77,11 @@ public class ControladorREST {
         return "admin/Gestion-ingredientes";
     }
 
+     @GetMapping("/Gestion-proveedores")
+    public String gestionProveedores(){
+        return "admin/Gestion-proveedores";
+    }
+
     /*
     @GetMapping("/")
     public String (){
